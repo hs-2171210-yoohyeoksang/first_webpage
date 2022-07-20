@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	Welcome to I.A ! 
+</title>
+<style>
+	body {background-image: url("images/computer1.jpg");}
+	.out { width: 1200px; height: 1000px; }
+	.top { width: 80%; height: 120px; border-radius: 20px; background-color: ivory;
+		   text-align: center; margin-left: 10%; margin-right: 10%;  
+		   padding-top: 50px; margin-bottom: 5px; font-size: 2.5em;
+		   border-style: solid; border-color: mediumpurple;}
+	.menubox { width: 79.5%; height: 75px; background-color: ivory;
+		 	   margin-left: 10%; margin-right: 10%; border-style: solid; border-color: mediumpurple;}
+	.menu { width: 15%; height: 50px; background-color: ivory; display: inline-block; border-radius: 20px;
+			text-align: center; padding-top: 20px; margin-right: 4px; margin-left: 4px; }
+	.menu:hover { background: thistle; color: white; }
+	.menu:visited {text-decoration: none;}
+	.sector { width: 100%; height: 730px; margin-left: 10%; }
+	.sector div { width: 39.5%; border-style: solid;   /*원래 헤이트 100있었음*/
+				  display: inline-block; border-color: mediumpurple; }
+	.sector div.small { border-style: solid; display: block; height: 170px; width: 250px;
+						border-radius: 20px; text-align: justify; margin-top: 20px; margin-left: 10px;
+						padding: 50px 10px 0px 10px ;background-color: plum; color: white; border-color: mediumpurple;}
+</style>
+<script> 
+	function cant1() {
+		alert("죄송합니다. FAQ 메뉴는 현재 점검중입니다. 금일 19:00에 정상화됩니다.");
+	}
+	function cant2() {
+		alert("죄송합니다. 고객센터 메뉴는 현재 점검중입니다. 금일 19:00에 정상화됩니다.");
+	}
+</script>
+</head>
+<body>
+	<div class="out">
+	  <div class="top"><span style="color: plum;">Welcome to I.A!</span><br>
+	  <span style="color: purple; font-size:0.5em;">Believe yourself!</span></div><br>
+	  <div class="menubox">
+	    <div class="menu"><a href="Notify.html">공지사항</a></div>
+	    <div class="menu"><a href="Certificate.html">IT 자격증</a></div>
+	    <div class="menu"><a href="Programming.html">프로그래밍 언어</a></div>
+	    <div class="menu"><a href="Book.html">IT 도서</a></div>
+	    <div class="menu" onclick=cant1()><a href="#">FAQ</a></div>
+	    <div class="menu" onclick=cant2()><a href="#">고객센터</a></div>
+	  </div><p><br>
+	  <div class="sector">
+	    <div>
+	      <div class="small">I.A의 의미는 IT Assistant로 IT 학습자들을 돕는다는 의미를 지닙니다.<br> 모든 컨텐츠는 무료이니 
+	      언제든 편하게 오셔서 IT 관련 내용들은 학습하시면 됩니다.</div>
+	      <br><br>
+	      <div class="small">비대면으로 편히 집에서 학습을 가능케 하기 위해 런칭한 서비스입니다. 원하신다면 언제 어디서든
+	      열람하실 수 있을 것입니다.<br> PC와 모바일 환경 어느곳에서도 가능합니다.</div>
+	    </div>
+	    <div>
+	      <div class="small">
+	      오늘의 IT상식 1:
+		  C는 주체 지향,
+		  Java는 객체 지향 
+		  프로그래밍 언어이다.<br>
+		  오늘의 IT상식 2:
+		  C에서 포인터의 주소를 
+		  잘못 활용한다면 메모리의 중요 정보에
+		  손상이 갈 수 있으니 주의해야 합니다.
+		  </div><br><span style="color:purple; text-shadow: 2px 1px orchid;">
+	      <strong>Just do it!<br>
+	      Don't be afraid of failure! </span><br></strong>
+	      <div class="small">
+	      오늘의 추천 언어:
+		  C#을 배워서 유니티 엔진에 접근하는건 어떨까요? <br>
+		  Javascript를 통해서 간단하게 웹을 동적으로
+		  변화시키는 것도 흥미로울 것 같습니다.
+		  </div>	
+	    </div>
+      </div>
+	</div>
+</body>
+</html>

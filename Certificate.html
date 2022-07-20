@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	I.A - IT 자격증
+</title>
+<style>
+	body {background-image: url("images/computer2.jpg");}
+</style>
+<link href ="style.css" type="text/css" rel="stylesheet">
+<script>
+	var a;
+	function show1() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML ="<strong>컴퓨터활용능력</strong> <p> 1급과 2급이 존재한다. 2급-컴퓨터 일반,엑셀 / 1급-2급에서 액세스 추가 <p>국가기술 자격증으로 한 번 취득하면 영구적으로 자격 내용이 보존된다. <p> 공기업에 입사 지원시 가산점을 부여하는 기업이 많이 있다. <p><strong>시험 일정</strong> <p>2급 필기 – 6월 19일<br> 1급 필기 – 6월 20일<br> 2급 실기 – 7월 3일<br> 1급 실기 – 7월 13일<br><br>";}
+		else
+			a.innerHTML = "";
+	}
+	function show2() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>정보처리기사</strong> <p> 소프트웨어 개발 관련 자격증으로, 프로젝트 업무를 수행하는 직무로서 계획수립, 분석, 설계, 구현, 시험, 운영, 유지보수 등의 업무를 수행할 수 있는 능력을 검증하는 시험이다. <p> 컴퓨터공학과와 관련이 가장 높은 자격증이기에 IT 업계에 입사 지원을 할때 도움이 된다. 대학생의 경우에는 정보처리기사를 취득하기 위해서 졸업이 필수 요건이 된다. <p><strong>시험 일정</strong> <p>필기 - 8월 14일 <br> 실기 - 9월 13일~9월 16일 <br><br> ";}
+		else
+			a.innerHTML = "";
+	}
+	function show3() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>네트워크관리사</strong> <p> 네트워크관리사란 서버를 구축하고 보안 설정, 시스템 최적화 등 네트워크 구축 및 이를 효과적으로 관리할 수 있는 인터넷 관련 기술력에 대한 자격증이다. <p> 1급과 2급 자격이 존재한다. 1급은 높은 난이도로 인해 응시자 수가 적어서 2급만 국가공인 자격증이다. 2급 과목은 네트워크 일반, TCP/IP, NOS, 네트워크 운용 기기이고 1급은 정보보보개론이 추가된다. <p> 시험 일정 <p> 1급 필기 - 10월 24일 <br> 1급 실기 - 12월 5일 <br> 2급 필기 - 7월 4일 <br> 2급 실기 - 10월 10일";}
+		else 
+			a.innerHTML = "";
+	}
+	function show4() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>ITQ</strong> <p> ITQ의 과목은 아래아 한글, 파워포인트, 엑셀, 엑세스, 인터넷이 있다. 비교적 쉬운 난이도로 인해 어린 연령의 학생과 중장년층이 응시하기에도 편안한 시험이다. <p> 점수는 500점 만점으로, 각 과목은 80%(400점) 이상 득점시, 60%(300점) 이상 득점시, 40%(200점) 이상 득점시 각 A, B, C 등급이 나오고, A등급 과목이 3개 이상인 경우 국가공인 OA Master 자격증이 나오게 된다. <p> <strong>시험 일정</strong> <p> 정기 시험 - 7월 10일, 9월 11일 <br> 특별 시험 - 8월 29일, 11월 28일";}
+		else
+			a.innerHTML = "";
+	}
+	function show5() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>정보보안기사</strong> <p> 과학기술정보통신부에서 주관하는 보안 계열 자격증이다. <p> 필기는 총 5과목이며, 각 과목 30분이며 4지 택일형이다. 각 과목 40점 이상 취득에, 5과목 평균점수 60점 이상의 점수를 받아야 합격을 할 수 있다. 실기는 총 180분이며 필답형이다. 단답형 10문항(30점), 서술형 3문항(42점), 작업형 3문항 중 2문항 선택(28점)이다. 정보처리기사에 비해서도 높은 난이도를 가지고 있다. 범위가 넓고, 실무적인 문제도 많이 출제되어 현업 종사자들도 어려움을 겪을 수준이다. <p> 시험 일정 <p> 필기 시험 - 9월 4일 <br> 실기 시험 - 10월 30일 ";}
+		else 
+			a.innerHTML = "";
+	}
+	function show6() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>워드프로세서</strong> <p> 문서 작성 프로그램(워드프로세서) 사용 능력을 검증하는 자격증이다. 매년 3~4만여 명이 취득하는 자격증. 필기 합격률 약 45~50%, 실기 합격률 약 50%내외이다. <p> 실기 시험은 제한 시간이 30분이기 때문에 집중하여 실수를 최대한 줄이도록 해야한다. <p> 본래 20년도까지는 정기 시험과 상시 시험이 있었지만 낮은 응시율로 인해 정기시험이 21년부터 폐지되었다. <p> <strong>시험 일정</strong> <p> 상시 시험이기 때문에 본인이 준비되었다면 언제든지 응시할 수 있다. ";}
+		else 
+			a.innerHTML = "";
+	}
+	function show7() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>GTQ</strong> <p> 그래픽 기술 자격증으로 1~3급으로 나뉘어진다. 3급은 민간자격이며 1~2급은 국가공인 자격증이다. <p> 1,2급은 90분, 3급은 60분동안 시험 시간이 주어진다. 어도비 포토샵을 통해서 시험을 진행하게 되며, 버전은 CS4부터 CC까지 응시가능하다. 1급은 100점 만점에 70점, 2급과 3급은 60점을 받아야 합격한다. <p> <strong>시험 일정</strong> <p> 정기 시험 - 6월 26일, 7월 24일, 8월 28일 <br><br><br><br><br>"}
+		else
+			a.innerHTML = "";
+	}
+	function show8() {
+		a = document.getElementById("text");
+		if (a.innerHTML == "" ){
+			a.innerHTML = "<strong>SQLD</strong> <p> SQL은 Structured Query Language) + D(Developer의 줄인 말로, SQL 개발자를 의미한다. 2013년부터 민간자격증에서 국가 공인 민간자격증으로 승격되었다. 취득 후 1년 6개월이 지난 시점부터 온라인 보수교육을 통해 영구 자격으로 전환할 수 있다. <p> 시험 시간은 총 90분으로 1과목 - 데이터 모델링의 이해, 2과목 - SQL 기본 및 활용으로 구성된다. 각 과목별로 최소 40% 이상 득점을 채우고, 총 점수가 60점 이상이면 합격이 된다. <p> <strong>시험 일정</strong> <p> 정기 시험 - 9월 5일, 11월 20일 <br><br>";}
+		else
+			a.innerHTML = "";
+	}
+</script>
+</head>
+<body>
+	<div class="out">
+	  <div class="top"><span style="color: plum;">Welcome to I.A!</span><br>
+	  <span style="color: purple; font-size: 0.5em;">Believe yourself!</span></div>
+	  <div class="notify"><span style="color: white;">프로그래밍 언어</span><br></div>
+	  <div class="sector">
+	  	<div class="small" ><br><strong><a href="index.html">메인 페이지로 돌아가기</a></strong><br><br>
+	  	<div style="border-style: solid; text-align: left; border-color: mediumpurple;">
+	  	<ul>
+	  	<li id="content" onclick=show1()>컴퓨터활용능력</li><br>
+	  	<li id="content" onclick=show2()>정보처리기사</li><br>
+	  	<li id="content" onclick=show3()>네트워크관리사</li><br>
+	  	<li id="content" onclick=show4()>ITQ</li><br>
+	  	<li id="content" onclick=show5()>정보보안기사</li><br>
+	  	<li id="content" onclick=show6()>워드프로세서</li><br>
+	  	<li id="content" onclick=show7()>GTQ</li><br>
+	  	<li id="content" onclick=show8()>SQLD</li><br>
+	  	</ul>
+	  	</div>
+	  	<div id="text" style="border-style: solid; text-align: justify; border-color: mediumpurple;">
+	  	<strong>좌측 화살표를 클릭하여 내용을 열람하실 수 있습니다. (재클릭하면 내용이 사라집니다.)</strong>
+	  	</div>
+	    </div>
+      </div>
+	</div>
+</body>
+</html>

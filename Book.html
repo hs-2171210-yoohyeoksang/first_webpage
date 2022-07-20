@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	I.A - IT 도서 
+</title>
+<style>
+	body {background-image: url("images/library.jpg")}
+</style>
+<link href ="style.css" type="text/css" rel="stylesheet">
+<script>
+	var c;
+	function show1() {
+		c = document.getElementById("text");
+		if (c.innerHTML == "" ){
+			c.innerHTML = "<strong>도서명 :</strong> HTML + CSS + JavaScript 웹 프로그래밍 <p> <strong>저자 :</strong> 황기태 <p> <strong>출판사 :</strong> 생능출판사 <p> <strong>발행일</strong> 2017년 1월 16일 <p> 본 도서는 HTML5, CSS3, Javascript를 기초부터 학습하고자 하는 사람에게 적합합니다. 웹 프로그래밍 기초 실력을 쌓기 위해서 추천드리는 도서입니다! <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>";}
+		else 
+			c.innerHTML = "";
+	}
+	function show2() {
+		c = document.getElementById("text");
+		if (c.innerHTML == "" ){
+			c.innerHTML = "<strong>도서명 :</strong>쉽게 풀어쓴 C언어 EXPRESS <p> <strong>저자 :</strong> 천인국 <p> <strong>출판사 :</strong> 생능출판사 <p> <strong>발행일</strong> 2018년 8월 20일 <p> 본 도서는 C언어를 기초부터 천천히 학습하고자 하는 사람에게 적합합니다. 대부분의 대학교 IT 전공생들의 첫 언어는 C입니다. 예습을 하거나, 복습을 하거나 여러분의 학습 현황대로 즐거운 배움을 얻어가시길 바랍니다! <br><br><br><br><br><br><br><br><br><br>";}
+		else 
+			c.innerHTML = "";
+	}
+	function show3() {
+		c = document.getElementById("text");
+		if (c.innerHTML == "" ){
+			c.innerHTML = "<strong>도서명 :</strong> 문제 해결을 위한 파이썬 첫걸음 <p> <strong>저자 :</strong> 김일민, 강희중, 유상미, 홍희경, 노은희 <p> <strong>출판사 :</strong> 배움터 <p> <strong>발행일</strong> 2018년 <p> 본 도서는 Python을 기초부터 학습하고자 하는 사람에게 적합합니다. 전공자가 아닐지라도, 코딩에 흥미를 가지고 싶은 사람 누구나 입문하기 쉬운 Python의 세계로 오세요!";}
+		else
+			c.innerHTML = "";
+	}
+</script>
+</head>
+<body>
+	<div class="out" style="height: 1200px;">
+	  <div class="top"><span style="color: plum;">Welcome to I.A!</span><br>
+	  <span style="color: purple; font-size: 0.5em;">Believe yourself!</span></div>
+	  <div class="notify"><span style="color: white;">프로그래밍 언어</span><br></div>
+	  <div class="sector">
+	  	<div class="small" style="height:140%"><br><strong><a href="index.html">메인 페이지로 돌아가기</a></strong><br><br>
+	  	<div style="border-style: solid; text-align: left; list-style-image: none; border-color: mediumpurple; 
+	  	background-image: url(images/library.jpg);" >
+	  	<ul>
+	  	<li onclick=show1()><img src="images/book1.jpg"></li><br>
+	  	<li onclick=show2()><img src="images/book2.jpg"></li><br>
+	  	<li onclick=show3()><img src="images/book3.png"></li>
+	  	</ul>
+	  	</div>
+	  	<div id="text" style="border-style: solid; text-align: justify; border-color: mediumpurple;">
+	  	<strong>좌측 책 이미지를 클릭하여 내용을 열람하실 수 있습니다. (재클릭하면 내용이 사라집니다.)</strong>
+	  	</div>
+	    </div>
+      </div>
+	</div>
+</body>
+</html>

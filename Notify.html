@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>
+	I.A - 공지사항 
+</title>
+<style>
+	body {background-image:  url("images/document.jpg");
+		  list-style-image: url(images/triangle.png);}
+	.out { width: 1200px; height: 1300px; }
+	.top { width: 80%; height: 120px; border-radius: 20px; background-color: ivory;
+		   text-align: center; margin-left: 10%; margin-right: 10%; 
+		   padding-top: 50px; margin-bottom: 5px; font-size: 2.5em; 
+		   border-style: solid; border-color: mediumpurple;}
+	.notify { width: 80%; height: 80px; border-radius: 20px; background-color: plum;
+		      text-align: center; margin-left: 10%; margin-right: 10%; 
+		      padding-top: 30px; margin-bottom: 5px; font-size: 2.5em; border-style: double; }
+	.sector { width: 100%; height: 900px; margin-left: 10%; }
+	.sector div { width: 400px; height: 670px; display: inline-block; }
+	.sector div.small { border-style: solid; display: inline-block; height: 900px; width: 80%;
+						border-radius: 20px; text-align: center; margin-top: 20px; 
+						background: ivory; border-color: mediumpurple;}
+</style>
+<script>
+	var n;
+	function show1() {
+		n = document.getElementById("text");
+		if (n.innerHTML == ""){
+			n.innerHTML = "6월 12일 오전 메인 페이지 UI 개편이 있을 예정입니다. 약 2시간 동안 네트워크 환경이 원활하지 못한다는 점 양해 부탁드립니다.9~11시경 홈페이지에 접속하신 분들은 접속 환경이 나빠질 수 있으므로 미리 학습 시간대를 조율하여 주시면 감사하겠습니다.";}
+		else 
+			n.innerHTML = "";					
+	}
+	function show2() {
+		n = document.getElementById("text2");
+		if (n.innerHTML == "" ){
+			n.innerHTML = "6월 넷째 주 한주간 제 13회 I.A 공모전이 예정되어 있습니다. 이번 주제는 '환경보호 웹사이트입니다.' 많은 관심 부탁드리며 상위 수상자에게는 경품 또한 증정됩니다. (1등 - 문화상품권 5만원 2등 - 문화상품권 3만원 3등 - 문화상품권 1만원)";}
+		else
+			n.innerHTML = "";
+		
+	}
+	function show3() {
+		n = document.getElementById("text3");
+		if (n.innerHTML == "" ){
+			n.innerHTML = "웹페이지 유지, 보수를 담당해주실 개발자를 3명 모집합니다(~6/23). 나이무관, 학력무관이며 대부분의 일정은 자택근무입니다. 신청서는 'stargalaxy1579.gmail.com'으로 보내주시길 바랍니다. 6명을 이력서를 통하여 우선 선발할 것이며 다가오는 6월 30일비대면으로 면접을 진행하도록 할 것입니다. I.A와 함께 해주실 분들을 찾고 있습니다. 감사합니다.<br>"}
+		else 
+			n.innerHTML = "";
+	}
+</script>
+</head>
+<body>
+	<div class="out">
+	  <div class="top"><span style="color: plum;">Welcome to I.A!</span><br>
+	  <span style="color: purple; font-size: 0.5em;">Believe yourself!</span></div>
+	  <div class="notify"><span style="color: white;">공지사항(6월)</span><br></div>
+	  <div class="sector">
+	  	<div class="small"><br><strong><a href="index.html">메인 페이지로 돌아가기</a></strong><br><br>
+	  		<div style="border-style: solid; text-align: justify; border-color: mediumpurple;">
+	  		<h2 style="text-align: center;">제목</h2>	  		
+	  		<ul>
+	  		<li id="content" onclick=show1()>메인 페이지 UI 개편 안내</li><br>
+	  		<span id="text">
+	  		</span><p>
+	  		<li id="content" onclick=show2()>6월 I.A 공모전 안내</li><br>
+	  		<span id="text2">
+	  		</span><p>
+	  		<li id="content" onclick=show3()>I.A 웹페이지 개발자를 모집합니다</li><br>
+	  		<span id="text3">
+	  		</span>
+			</ul>
+		    </div>
+	  		<div style="border-style: solid; border-color: mediumpurple; height: 400px;">
+	  		<span id="text4"><h3>날짜</h3><p><br><strong>21/06/11</strong></span><br><br>
+	  		<span id="text5"><p><br><strong>21/06/09</strong></span><br><br>
+	  		<span id="text6"><p><br><strong>21/06/02</strong></span>
+	  	    </div>
+	    </div>
+      </div>
+	</div>
+</body>
+</html>
